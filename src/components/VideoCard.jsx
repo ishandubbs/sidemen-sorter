@@ -14,6 +14,8 @@ const VideoCard = ({ video, onBan }) => {
              title = "Youtube video player"
              allowFullScreen
              ></iframe>
+             <p>{video.snippet.description}</p>
+             <p><strong>Channel:</strong> {video.snippet.channelTitle}</p>
             <div className="flex gap-3 mt-4">
                 <button className="button" onClick={() => onBan(video)}>
                     Ban Video
