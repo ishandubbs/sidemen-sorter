@@ -14,8 +14,6 @@ const App = () => {
       description: video.snippet.description,
       channel: video.snippet.channelTitle
     }])
-
-    setCurrentVideo(null)
   }
 
   return (
