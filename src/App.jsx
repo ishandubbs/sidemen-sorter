@@ -15,7 +15,7 @@ const App = () => {
       channel: video.snippet.channelTitle
     }])
 
-    fetchVideos()
+    setCurrentVideo(null)
   }
 
   return (
