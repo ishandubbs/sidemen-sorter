@@ -31,20 +31,20 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] Multiple types of attributes are clickable and can be added to the ban list
+- [X] Multiple types of attributes are clickable and can be added to the ban list
 - [ ] Users can see a stored history of their previously displayed  results from this session
   - A dedicated section of the application displays all the previous images/attributes seen before
   - Each time the API call button is clicked, the history updates with the newest API result
 
 The following **additional** features are implemented:
 
-* [X] List anything else that you added to improve the site's functionality!
+* [] List anything else that you added to improve the site's functionality!
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://submissions.us-east-1.linodeobjects.com/web102/9RjBzceX.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://submissions.us-east-1.linodeobjects.com/web102/xhXkbWRo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
