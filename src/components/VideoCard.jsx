@@ -1,6 +1,6 @@
 import React from "react"
 
-const VideoCard = ({ video, onBan }) => {
+const VideoCard = ({ video, onBan, onBanAttribute }) => {
     if (!video) return null;
 
     return (
@@ -14,10 +14,11 @@ const VideoCard = ({ video, onBan }) => {
              title = "Youtube video player"
              allowFullScreen
              ></iframe>
-             <p>{video.snippet.description}</p>
-             <p><strong>Channel:</strong> {video.snippet.channelTitle}</p>
+            <p onClick={() => onBanAttribute("Less Than 1")} className="clickable">Less Than 1 Hour</p>
+            <p onClick={() => onBanAttribute("1-2 Hours")} className="clickable">1-2 Hours</p>
+            <p onClick={() => onBanAttribute("2+ Hours")} className="clickable">2+ Hours</p>
             <div className="flex gap-3 mt-4">
-                <button className="button" onClick={() => onBan(video)}>
+                <button className="button" onClick={() => onBan(video.id.videoId)}>
                     Ban Video
                 </button>
             </div>
@@ -25,4 +26,4 @@ const VideoCard = ({ video, onBan }) => {
     )
 }
 
-export default VideoCard
+export default VideoCard 
