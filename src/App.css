@@ -133,8 +133,27 @@ input {
   text-align: center;
 }
 
+.clickable {
+  display: inline-block;
+  background-color: #4a90e2;
+  color: white;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s;
+}
+
+.clickable:hover {
+  background-color: #357abd;
+}
+
+.clickable:active {
+  transform: scale(0.95)
+}
+
 .screenshot {
   max-width: 90%;
   border-radius: 8px;
-  margin: 10px 0;
+  margin: 10px 0
 }
