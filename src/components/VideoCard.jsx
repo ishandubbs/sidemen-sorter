@@ -14,13 +14,15 @@ const VideoCard = ({ video, onBan, onBanAttribute }) => {
              title = "Youtube video player"
              allowFullScreen
              ></iframe>
-            <p onClick={() => onBanAttribute("Less Than 1")} className="clickable">Less Than 1 Hour</p>
-            <p onClick={() => onBanAttribute("1-2 Hours")} className="clickable">1-2 Hours</p>
-            <p onClick={() => onBanAttribute("2+ Hours")} className="clickable">2+ Hours</p>
-            <div className="flex gap-3 mt-4">
-                <button className="button" onClick={() => onBan(video.id.videoId)}>
-                    Ban Video
-                </button>
+            <div className="button-container">
+                <p onClick={() => onBanAttribute("Less Than 1")} className="clickable">Less Than 1 Hour</p>
+                <p onClick={() => onBanAttribute("1-2 Hours")} className="clickable">1-2 Hours</p>
+                <p onClick={() => onBanAttribute("2+ Hours")} className="clickable">2+ Hours</p>
+                <div className="flex gap-3 mt-4">
+                    <button className="button" onClick={() => onBan(video.id.videoId)}>
+                        Ban Video
+                    </button>
+                </div>
             </div>
         </div>
     )
